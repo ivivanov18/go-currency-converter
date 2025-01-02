@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/ivivanov18/go-currency-converter/ui"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	ui.Execute()
+	fmt.Printf("Base currency: %s\n", ui.BaseCurrencyInput)
+	fmt.Printf("Target currency: %s\n", ui.TargetCurrencyInput)
+	fmt.Printf("Amount: %s\n", ui.AmountInput)
 }
