@@ -28,9 +28,6 @@ func createMainUI() huh.Form {
 				Title("Choose the currency you want to convert from").
 				Options(
 					huh.NewOption("USD", "USD"),
-					huh.NewOption("EUR", "EUR"),
-					huh.NewOption("JPY", "JPY"),
-					huh.NewOption("BGN", "BGN"),
 				).
 				Value(&BaseCurrencyInput),
 			huh.NewSelect[string]().
